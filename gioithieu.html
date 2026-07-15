@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>TRANG CHỦ </title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+	<section id="header">
+		<a href"#"><img src="../image/logo.png" alt="logo" width="90" height="90" style="border-radius:50%; object-fit: cover;"></a>
+			
+		<div>
+			<ul id="navbar">
+				<li><a href="trangchu.html">TRANG CHỦ</a></li>
+				<li><a href="menu.html">MENU</a></li>
+				<li><a href="gioithieu.html"> GIỚI THIỆU</a></li>
+				<li><a href="cuahang.html">CỬA HÀNG</a></li>
+				<li><a href="gocnholarva.html">GÓC NHỎ LARVA</a></li>
+				<li><a href="tuyendung.html">TUYỂN DỤNG</a></li>
+				<li><a href="lienhe.html">LIÊN HỆ</a></li>
+				<li><a href="thanmen.html">THÂN MẾN</a></li>
+				<span class="phone"><i class="fa-solid fa-phone"></i> 1800 6230</span>
+				<span class="search"><i class="fa-solid fa-magnifying-glass"></i></span>
+			</ul>
+		</div>
+    </section>  
+	<section class="store-page-container">
+    <div class="store-header">
+        <h1>⁡ ⁡</h1>
+       <p> ⁡ ⁡</p>
+	   
+    </div>
+	</section>
+	<section class="team-section">
+    <!-- Lời dẫn dắt -->
+    <div class="intro-story">
+    <h2>Hành Trình Của Mình</h2>
+    <p>
+        Larva Coffee không chỉ là một dự án học tập, mà là nơi mình gửi gắm niềm đam mê với hương vị cà phê nguyên bản. 
+        Từ những buổi thảo luận sôi nổi tại giảng đường đến những đêm miệt mài thiết kế, mình chính là người đã tạo nên không gian này.
+    </p>
+</div>
+
+    <!-- Khung 2 thành viên ngoài trang chủ -->
+    <div class="member-container">
+        <!-- Thành viên 1 -->
+        <div class="member-card" onclick="openBio('my')">
+            <div class="img-wrapper">
+                <img src="../image/my-profile.jpg" alt="Huỳnh Thị My">
+            </div>
+            <div class="member-info">
+                <h3>Huỳnh Thị My</h3>
+                <p>MSSV: 2404821 | Lớp học phần: CĐTMĐT28GHI</p>
+                <div class="view-detail-btn">Xem chi tiết thông tin</div>
+            </div>
+        </div>
+
+       
+
+    <!-- KHUNG RIÊNG BIỆT (MODAL) HIỆN RA KHI BẤM -->
+    <div id="bio-modal" class="modal-overlay" onclick="closeModal()">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <div class="modal-body">
+                <!-- Bên trái: Ảnh bự nằm giữa -->
+                <div class="modal-left">
+                    <img id="modal-img" src="" alt="Photo">
+                </div>
+                <!-- Bên phải: Nội dung chi tiết -->
+                <div class="modal-right">
+                    <h2 id="modal-name"></h2>
+                    <p id="modal-role" class="role-tag"></p>
+                    <hr>
+                    <div id="modal-description">
+                        <!-- Nội dung sẽ tự động điền vào đây -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+	
+	<footer class="section-p1">
+    <div class="col">
+        <h4>LARVA COFFEE - OPEN 24/7</h4>
+        <p><strong>Hotline:</strong> 1800 6230</p>
+        <div class="follow">
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <h4>Thông tin</h4>
+        <a href="Trang chủ.html">Trang chủ</a>
+        <a href="#">Về chúng tôi</a>
+        <a href="lienhe.html">Liên hệ</a>
+    </div>
+
+    <div class="col">
+        <h4>Dịch vụ</h4>
+        <a href="MENU.html">Menu</a>
+        <a href="#">Cửa hàng</a>
+        <a href="#">Chính sách & Bảo mật</a>
+    </div>
+
+    <div class="col">
+        <h4>Tuyển dụng</h4>
+        <a href="#">Chuyện của Larva</a>
+        <a href="tuyendung.html">Tuyển dụng</a>
+        <a href="#">Đăng nhập</a>
+    </div>
+
+    <div class="col install">
+        <h4>Đăng ký nhận tin</h4>
+        <p>Nhận tin khuyến mãi của Larva Coffee</p>
+        <div class="form">
+            <input type="text" placeholder="Nhập địa chỉ email">
+            <button class="normal">Gửi</button>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>© 2026 Larva Coffee - All Rights Reserved</p>
+    </div>
+</footer>
+			
+	
+</body>
+
+</html>
+
+
+<script>const teamData = {
+    'my': {
+        name: 'Huỳnh Thị My',
+        img: '../image/my-profile.jpg',
+        role: 'Creative Leader / Branding',
+        desc: `<ul>
+                <li><strong>Vị trí:</strong> Phụ trách Branding và Content cho Larva Coffee.</li>
+                <li><strong>Công việc:</strong> Nghiên cứu thị trường D2C, xây dựng ngôn ngữ hình ảnh và thông điệp truyền thông nhất quán trên website.</li>
+                <li><strong>Kỹ năng:</strong> Content Marketing, Market Research, Branding.</li>
+                <li><strong>Quan điểm:</strong> "Một thương hiệu thành công là khi khách hàng không chỉ mua sản phẩm mà mua cả sự tử tế và câu chuyện đằng sau đó."</li>
+               </ul>`
+    },
+    'tham': {
+        name: 'Huỳnh Trần Xuân Thắm',
+        img: '../image/ảnh giới thiệu 2.jpg',
+        role: 'Technical & Ops Manager',
+        desc: `<ul>
+                <li><strong>Vị trí:</strong> Phụ trách Kỹ thuật và Vận hành dự án.</li>
+                <li><strong>Công việc:</strong> Thiết kế cấu trúc website trên HTML/CSS, tối ưu hóa quy trình kinh doanh và quản lý tài chính cho mô hình cà phê 24h.</li>
+                <li><strong>Kỹ năng:</strong> Web Development, Financial Management, Operations.</li>
+                <li><strong>Quan điểm:</strong> "Công nghệ chỉ thực sự có giá trị khi nó giải quyết được vấn đề của người dùng một cách đơn giản và hiệu quả nhất."</li>
+               </ul>`
+    }
+};
+
+function openBio(id) {
+    const person = teamData[id];
+    document.getElementById('modal-img').src = person.img;
+    document.getElementById('modal-name').innerText = person.name;
+    document.getElementById('modal-role').innerText = person.role;
+    document.getElementById('modal-description').innerHTML = person.desc;
+    
+    document.getElementById('bio-modal').style.display = 'flex';
+}
+
+function closeModal() {
+    document.getElementById('bio-modal').style.display = 'none';
+}
+</script>
